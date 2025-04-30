@@ -17,6 +17,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+        working-directory: PizzaHutOrderingApp
+
       - name: Build the project
         run: ./gradlew build
         working-directory: PizzaHutOrderingApp
