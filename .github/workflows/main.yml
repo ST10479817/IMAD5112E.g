@@ -2,8 +2,7 @@ name: Kotlin Build
 
 on:
   push:
-    branches:
-      - main  # This triggers the workflow when changes are pushed to the main branch
+    branches: [main]  # This triggers the workflow when changes are pushed to the main branch
   # This triggers the workflow when a pull request is made to the main branch
 
 jobs:
